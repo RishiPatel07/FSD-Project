@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:black;
+    font-family: 'Martel Sans';
+}
+
+.main {
+    background-image: url("assets/IN-en-20240101-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 690px;
+    position: relative;
+
+}
+
+
+.main .box {
+    height: 690px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+.main .box2 {
+    height: 690px;
+    width: 100%;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.178),black);
+}
+
+
+.main .txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1px 20px;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap:wrap;
+}
+
+
+.bold1{
+    font-size: 46px;
+    font-weight: 700;
+    position: relative;
+    z-index:3;
+    color:white;
+}
+.norm1{
+    font-size: 22px;
+    font-weight: 100;
+}
+.norm2{
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+.first {
+    display: flex;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    max-width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+
+@media screen and (max-width:1300px){
+    .first{
+        flex-wrap: wrap;
+    }
+    .navbar {
+      padding: 0px 0px !important;/* Adjust the padding as needed */
+    }
+}
+  
+@media screen and (max-width:637px){
+    .secImg{
+        transform: scale(0.75);
+    }
+    .secImg {
+        transform: scale(0.75);
+    }
+
+    .bold1{
+        font-size:30px;
+    }
+    .txt form{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .norm1{
+        font-size: 20px;
+    }
+    .norm2{
+        font-size: 14px;
+    }
+    .main form input{
+        transform: scaleX(0.75);
+    }
+
+}
+
+@media screen and (max-width:400px){
+    .secImg{
+        transform: scale(0.75);
+    }
+}
+
+
+.form-control::placeholder {
+    color: rgb(255, 255, 255); /* Set a color with enough contrast */
+}
+
+.card-header:hover{
+    cursor: pointer;
+    background-color: #3e3d3d
+}
+
+footer div ul li{
+    margin:10px 0px;
+    text-decoration: underline;
+    color:rgba(255, 255, 255, 0.7)
+}
+
+@media screen and (max-width:600px){
+    section form{
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width:400px){
+    section.first secImg{
+        width: 100px;
+    }
+    form input{
+        max-width:200px; 
+    }
+}
